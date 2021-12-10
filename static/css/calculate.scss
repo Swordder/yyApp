@@ -1,0 +1,23 @@
+.ni_bonus{
+	.form_cal{
+		background-color: $color-xf;
+		margin-top: -100rpx;
+		box-shadow:0px 2px 10px 0px rgba(193,193,193,0.5);
+		border-radius: 8rpx;
+		.u-input{
+			background-color: $color-f5;
+		}
+	}	
+	.u-abso{
+		width: 100%;
+		top: 40rpx;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.bonus_num{
+		font-size: 56rpx;
+	}
+	.tip{
+		color: $color-x9;
+	}
+}

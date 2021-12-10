@@ -1,0 +1,95 @@
+// 公用变量
+
+/* 定义常用color */
+// 纯色
+$color-x0: #000000;
+$color-xf: #FFFFFF ;
+$color-xa: #AAAAAA ;
+$color-xd: #DDDDDD ;
+$color-x3: #333333 ;
+$color-x6: #666666 ;
+$color-x9: #999999 ;
+
+// 辅助色
+$color-e4:  #E4E4E4 ;
+$color-e7:  #E7E7E7 ;
+$color-e9:  #E9E9E9 ;
+$color-f7:  #F7F7F7 ;
+$color-f5:  #F5F5F5 ;
+$color-f3:  #F3F3F3 ;
+$color-d8:  #D8D8D8 ;
+
+// 彩色
+$color-31:  #5870FE ;
+$color-32:  #F0F4FF ;
+$color-33:  #FF982A ;
+$color-34:  #FFF4E9 ;
+$color-35:  #FF5252 ;
+$color-36:  #FFB92A ;
+$color-37:  #4ED79C ;
+$color-38:  #7A4325 ;
+$color-39:  #E4AE91 ;
+$color-40:  #FCDAC7 ;
+
+$color-41:  #0077C8 ;
+$color-42:  #138CDE ;
+$color-43:  #FFD100 ;
+$color-44:  #EAF7FC ;
+$color-45:  #E5E8FF;
+
+// 透明色
+$color-x0-0:  rgba(0,0,0,0) ;
+$color-x0-1:  rgba(0,0,0,0.1) ;
+$color-x0-3:  rgba(0,0,0,0.3) ;
+$color-x0-5:  rgba(0,0,0,0.5) ;
+$color-x0-6:  rgba(0,0,0,0.6) ;
+$color-d8-5:  rgba(216,216,216,0.5) ;
+/* 定义常用样式变量 ：2021/09/15*/
+@mixin position_abs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+@mixin btn_common($wdt,$ht,$bgc,$color,$bd_rd,$font_size){
+	width: $wdt;
+	height: $ht;
+	font-size: $font_size;
+	text-align: center;
+	background-color: $bgc;
+	color: $color;
+	border-radius: $bd_rd;
+	line-height: $ht;
+}
+.y_m_20{
+	height: 20rpx;
+	background-color: $color-f5;
+}
+.fix_bt_btn{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: $color-xf;
+	.selected{
+		background-color: $color-31;
+	}
+}
+.font_10{
+	font-size: 12rpx;
+	transform: scale(.9);
+	transform-origin: left;
+}
+.font_bold{
+	font-weight: bold;
+}
+.font_blue{
+	color: $color-31;
+}
+.font_color_red{
+	color: #F65B6A;
+}
+.font_color_green{
+	color: #4ED79C;
+}
