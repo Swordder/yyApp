@@ -1,0 +1,164 @@
+{
+	"name": "youyao_app",
+	"appid": "__UNI__4163B4E",
+	"description": "",
+	"versionName": "1.0.0",
+	"versionCode": 1,
+	"transformPx": false,
+	/* 5+App特有相关 */
+	"app-plus": {
+		"usingComponents": true,
+		"nvueStyleCompiler": "uni-app",
+		"compilerVersion": 3,
+		"splashscreen": {
+			"alwaysShowBeforeRender": true,
+			"waiting": true,
+			"autoclose": true,
+			"delay": 0
+		},
+		"screenOrientation": [
+			//应用支持的屏幕方向
+			// "portrait-secondary", //竖屏（反向），上下颠倒  
+			// "landscape-primary",  //横屏，Home键在右侧  
+			// "landscape-secondary" //横屏（反向），Home键在左侧  
+			"portrait-primary" //竖屏  
+		],
+		/* 服务协议提示框 */
+		"privacy": {
+			"prompt": "template",
+			"template": {
+				"title": "服务协议",
+				"message": "　　请您务必审慎阅读、充分理解《服务协议》各条款，包括但不限于：为了更好的向您提供服务，我们需要收集您的设备标识、操作日志等信息用于分析、优化应用性能。<br/>　　您可阅读<a href=\"http://static.youyao99.com/protocol-youyao.html\">《服务协议》</a> 和 <a href=\"http://static.youyao99.com/permission-youyao.html\">《隐私政策》</a>了解详细信息。如果您同意，请点击下面按钮开始接受我们的服务。",
+				"buttonAccept": "同意",
+				"buttonRefuse": "暂不同意",
+				"second": {
+					"title": "温馨提示",
+					"message": "　　进入应用前，您需先同意<a href=\"http://static.youyao99.com/protocol-youyao.html\">《服务协议》</a> 和 <a href=\"http://static.youyao99.com/permission-youyao.html\">《隐私政策》</a>，否则将退出应用。",
+					"buttonAccept": "同意并继续",
+					"buttonRefuse": "退出应用"
+				}
+			}
+		},
+		/* 模块配置 */
+		"modules": {
+			"OAuth": {},
+			"Share": {},
+			"Maps": {},
+			"VideoPlayer": {},
+			"Geolocation": {}
+		},
+		/* 应用发布信息 */
+		"distribute": {
+			/* android打包配置 */
+			"android": {
+				"permissions": [
+					"<uses-feature android:name=\"android.hardware.camera\"/>",
+					"<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.BLUETOOTH\"/>",
+					"<uses-permission android:name=\"android.permission.BLUETOOTH_ADMIN\"/>",
+					"<uses-permission android:name=\"android.permission.CAMERA\"/>",
+					"<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+					"<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+					"<uses-permission android:name=\"android.permission.INTERNET\"/>",
+					"<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+					"<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+					"<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+					"<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
+					"<uses-permission android:name=\"android.permission.USE_FINGERPRINT\"/>",
+					"<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+					"<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+					"<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>",
+					"<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>",
+					"<uses-permission android:name=\"android.permission.BLUETOOTH\"/>",
+					"<uses-permission android:name=\"android.permission.BLUETOOTH_ADMIN\"/>"
+				],
+				"schemes": "youyao"
+			},
+			/* ios打包配置 */
+			"ios": {
+				"idfa": false,
+				"urlschemewhitelist": "youjiayi,weixin",
+				"urltypes": "youyao"
+			},
+			/* SDK配置 */
+			"sdkConfigs": {
+				"ad": {},
+				"oauth": {
+					"weixin": {
+						"appid": "wxb0e3908844df391a",
+						"appsecret": "7f02ad47c758ea582ebd9dd258c5dfc2",
+						"UniversalLinks": ""
+					}
+				},
+				"share": {
+					"weixin": {
+						"appid": "wxb0e3908844df391a",
+						"UniversalLinks": ""
+					}
+				},
+				"push": {},
+				"geolocation": {
+					"amap": {
+						"__platform__": ["ios", "android"],
+						"appkey_ios": "",
+						"appkey_android": "ee795a0aba97ba38dfc8d940ad6617cd"
+					}
+				},
+				"maps": {
+					"amap": {
+						"appkey_ios": "",
+						"appkey_android": "ee795a0aba97ba38dfc8d940ad6617cd"
+					}
+				},
+				"payment": {}
+			}
+		}
+	},
+	/* 快应用特有相关 */
+	"quickapp": {},
+	/* 小程序特有相关 */
+	"mp-weixin": {
+		"appid": "",
+		"setting": {
+			"urlCheck": false
+		},
+		"usingComponents": true
+	},
+	"mp-alipay": {
+		"usingComponents": true
+	},
+	"mp-baidu": {
+		"usingComponents": true
+	},
+	"mp-toutiao": {
+		"usingComponents": true
+	},
+	"uniStatistics": {
+		"enable": false
+	},
+	"vueVersion": "2",
+	"h5": {
+		"router": {
+			"mode": "history"
+		},
+		"devServer": {
+			"https": false,
+			"disableHostCheck": true,
+			// "port": 8080,
+			// "changeOrigin": true,
+			// publicPath: '/uniapp/',
+			"proxy": {
+				"^/apibate/newapi": {
+					"target": "http://wx.qa.youyao99.com"
+				}
+			}
+		}
+	}
+}

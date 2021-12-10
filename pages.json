@@ -1,0 +1,1100 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		
+		// #ifdef APP-PLUS
+		{
+			"path": "pages/guide/guide",
+			"name": "guidePage",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": ""
+			}
+		},
+		// #endif
+	
+		{
+			"path": "pages/index/index",
+			"aliasPath": "/",
+			"name": "index",
+			"meta": {
+				"requireLogin": true
+				// "requireBind": false
+			},
+			"style": {
+				"navigationBarTitleText": "产品列表",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"name": "login",
+			"meta": {
+				"requireLogin": false
+				// "requireBind": false
+			},
+			"style": {
+				"navigationBarTitleText": "登录",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/mine/bindPhone",
+			"name": "bindPhone",
+			"meta": {
+				"requireLogin": true
+				// "requireBind": false
+			},
+			"style": {
+				"navigationBarTitleText": "绑定手机号"
+			}
+		},
+		{
+			"path": "pages/products/productIndex",
+			"name": "productIndex",
+			"meta": {
+				"requireLogin": true
+				// "requireBind": false
+			},
+			"style": {
+				"navigationBarTitleText": "产品首页",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/products/aerogenInfo",
+			"name": "aerogenInfo",
+			"meta": {
+				"requireLogin": true
+				// "requireBind": false
+			},
+			"style": {
+				"navigationBarTitleText": "爱尔真",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/products/productInfo",
+			"name": "productInfo",
+			"meta": {
+				"requireLogin": true
+				// "requireBind": false
+			},
+			"style": {
+				"navigationBarTitleText": "力蜚能",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/products/productIntro",
+			"name": "productIntro",
+			"meta": {
+				"requireLogin": true
+				// "requireBind": false
+			},
+			"style": {
+				"navigationBarTitleText": "产品说明书",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/products/prodApplyList",
+			"name": "prodApplyList",
+			"meta": {
+				"requireLogin": true
+				// "requireBind": false
+			},
+			"style": {
+				"navigationBarTitleText": "应用列表",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/products/prodApplyDetail",
+			"name": "prodApplyDetail",
+			"meta": {
+				"requireLogin": true
+				// "requireBind": false
+			},
+			"style": {
+				"navigationBarTitleText": "应用详情",
+				"enablePullDownRefresh": false
+			}
+		},
+
+		{
+			"path": "pages/articleDetail/articleDetail",
+			"name": "articleDetail",
+			"meta": {
+				"requireLogin": true
+				// "requireBind": false
+			},
+			"style": {
+				"navigationBarTitleText": "临床解读",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/products/aerogenApply/aerogenSolo",
+			"name": "aerogenSolo",
+			"meta": {
+				"requireLogin": true
+				// "requireBind": false
+			},
+			"style": {
+				"navigationBarTitleText": "爱尔真产品解读",
+				"navigationBarBackgroundColor": "#138CDE",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/products/aerogenApply/aerogenUltra",
+			"name": "aerogenUltra",
+			"meta": {
+				"requireLogin": true
+				// "requireBind": false
+			},
+			"style": {
+				"navigationBarTitleText": "爱尔真产品解读",
+				"navigationBarBackgroundColor": "#138CDE",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/products/aerogenApply/aerogenController",
+			"name": "aerogenController",
+			"meta": {
+				"requireLogin": true
+				// "requireBind": false
+			},
+			"style": {
+				"navigationBarTitleText": "爱尔真产品解读",
+				"navigationBarBackgroundColor": "#138CDE",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/products/aerogenApply/aerogenAnalysis",
+			"name": "aerogenAnalysis",
+			"meta": {
+				"requireLogin": true
+				// "requireBind": false
+			},
+			"style": {
+				"navigationBarTitleText": "爱尔真竞品分析",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/products/aerogenApply/aerogenQaDetail",
+			"name": "aerogenQaDetail",
+			"meta": {
+				"requireLogin": true
+				// "requireBind": false
+			},
+			"style": {
+				"navigationBarTitleText": "Q&A",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/products/aerogenApply/aerogenQuAnwser",
+			"name": "aerogenQuAnswer",
+			"meta": {
+				"requireLogin": true
+				// "requireBind": false
+			},
+			"style": {
+				"navigationBarTitleText": "Q&A",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/hospital/hospital",
+			"name": "hospital",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "医院列表",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/hospital/hospitalDetail",
+			"name": "hospitalDetail",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "医院详情",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/mine/mine",
+			"name": "mine",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true
+			},
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationBarBackgroundColor": "#5870FE",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/mine/myHospitalList",
+			"name": "myHospitalList",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "我服务的医院列表",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/mine/myHosDetail",
+			"name": "myHosDetail",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "我服务的医院详情",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/authentication/authentication",
+			"name": "authentication",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true
+			},
+			"style": {
+				"navigationBarTitleText": "身份认证",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/mine/myData",
+			"name": "myData",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true
+			},
+			"style": {
+				"navigationBarTitleText": "个人资料",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/mine/verifyInfo",
+			"name": "verifyInfo",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true
+			},
+			"style": {
+				"navigationBarTitleText": "认证资料",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/authentication/company",
+			"name": "company",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true
+			},
+			"style": {
+				"navigationBarTitleText": "公司",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/authentication/serviceCompany",
+			"name": "serviceCompany",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true
+			},
+			"style": {
+				"navigationBarTitleText": "曾服务的公司",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/authentication/everServeHos",
+			"name": "everServeHos",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true
+			},
+			"style": {
+				"navigationBarTitleText": "曾服务的医院",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/authentication/departments",
+			"name": "departments",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true
+			},
+			"style": {
+				"navigationBarTitleText": "科室",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/authentication/territory",
+			"name": "territory",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true
+			},
+			"style": {
+				"navigationBarTitleText": "治疗领域",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/authentication/indications",
+			"name": "indications",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true
+			},
+			"style": {
+				"navigationBarTitleText": "适应症",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/aboutUs/aboutUs",
+			"name": "aboutUs",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": false
+			},
+			"style": {
+				"navigationBarTitleText": "关于我们",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/notFound",
+			"name": "notFound",
+			"meta": {
+				"requireLogin": true
+			},
+			"style": {
+				"navigationBarTitleText": "找不到页面了",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/myCollect/index",
+			"name": "myCollect",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": false
+			},
+			"style": {
+				"navigationBarTitleText": "我的收藏",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/myCollect/list",
+			"name": "collectList",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true
+			},
+			"style": {
+				"navigationBarTitleText": "我的收藏",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/compliance/compliance",
+			"name": "compliance",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "合规中心",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/compliance/knowledge",
+			"name": "knowledge",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "知识库",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/compliance/knowledgeInfo",
+			"name": "knowledgeInfo",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "知识信息",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/compliance/knowledgeDetail",
+			"name": "knowledgeDetail",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "知识详情",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/compliance/exam",
+			"name": "exam",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "考试",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/compliance/examReview",
+			"name": "examReview",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "考试回顾",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/compliance/examContent",
+			"name": "examContent",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "考试",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/compliance/examDetail",
+			"name": "examDetail",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "考试详情",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/compliance/examResult",
+			"name": "examResult",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "考试结果",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/compliance/agreeView",
+			"name": "agreeView",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "协议书",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/myGroup/index",
+			"name": "myGroup",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "群组",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/myGroup/doctorInfo",
+			"name": "groupDoctorInfo",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "医生信息",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/myGroup/select",
+			"name": "selectDoctorInfo",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "医生信息",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/myGroup/list",
+			"name": "groupDoctorList",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "我的分组",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/myGroup/groupInfo",
+			"name": "groupInfo",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "我的群组详情",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/myGroup/editDoctorGroup",
+			"name": "editDoctorGroup",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "我的分组",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/myGroup/editDelegateGroup",
+			"name": "editDelegateGroup",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "我的群组详情",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/visit/visit",
+			"name": "visit",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "拜访系统",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/visit/checkIn",
+			"name": "checkIn",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "签入",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/visit/checkOut",
+			"name": "checkOut",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "签出",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/visit/recordList",
+			"name": "recordList",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "拜访记录",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/visit/visitRp",
+			"name": "visitRp",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "拜访报告",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/visit/salesRp",
+			"name": "salesRp",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "销售报告",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/visit/checkoutDetail",
+			"name": "checkoutDetail",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "签出",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/visit/serveHospitals",
+			"name": "serveHospitals",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "选择拜访医院",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/visit/visitDep",
+			"name": "visitDep",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "选择科室",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/visit/visitDocList",
+			"name": "visitDocList",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "拜访医生",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/visit/visitDocForm",
+			"name": "visitDocForm",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+
+			},
+			"style": {
+				"navigationBarTitleText": "新增医生",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/integral/shop",
+			"name": "integralShop",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "积分商城",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/integral/exchange",
+			"name": "integralExchange",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "积分商城",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/integral/detail",
+			"name": "integralDetail",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "积分明细",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/myInvite/index",
+			"name": "myInvite",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "我的邀请",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/mine/news",
+			"name": "news",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true
+			},
+			"style": {
+				"navigationBarTitleText": "消息",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/mine/newsDetail",
+			"name": "newsDetail",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true
+			},
+			"style": {
+				"navigationBarTitleText": "消息详情",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/question/question",
+			"name": "question",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "问卷列表",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/question/questionInvitees",
+			"name": "questionInvitees",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "问卷受邀人列表",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/report/report",
+			"name": "report",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "流向月报",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/report/serviceReport",
+			"name": "serviceReport",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "流向月报",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/report/historyFlow",
+			"name": "historyFlow",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "历史流向",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/report/serviceHosRecord",
+			"name": "serviceHosRecord",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "服务记录",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/redirect",
+			"name": "redirect",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": false
+			},
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/bonusCal/niferexBonusCal",
+			"name": "niferexBonusCal",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "力蜚能奖金计算工具",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/webview/activity",
+			"name": "activity",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true
+			},
+			"style": {
+				"navigationBarTitleText": "活动",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/webview/cureAreas",
+			"name": "cureAreas",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": false
+			},
+			"style": {
+				"navigationBarTitleText": "治疗领域",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/webview/hotNews",
+			"name": "hotNews",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": false
+			},
+			"style": {
+				"navigationBarTitleText": "热门消息",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/webview/webview",
+			"name": "webview",
+			"meta": {},
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/inviteQrCode/inviteQrCode",
+			"name": "inviteQrCode",
+			"meta": {
+				"requireLogin": false,
+				"requireBind": false
+			},
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/inviteQrCode/QrCode",
+			"name": "QrCode",
+			"meta": {
+				"requireLogin": false,
+				"requireBind": false
+			},
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+		 }
+
+		}, {
+			"path": "pages/question/surveyInvite",
+			"name": "surveyInvite",
+			"meta": {
+				"requireLogin": true,
+				"requireBind": true,
+				"requireAuth": true
+			},
+			"style": {
+				"navigationBarTitleText": "问卷邀请",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/setting/feedback",
+			"name": "feedback",
+			"meta": {
+				"requireLogin": true
+			},
+			"style": {
+				"navigationBarTitleText": "用户反馈",
+				"enablePullDownRefresh": false
+			}
+		}
+
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "优药",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#F8F8F8",
+		"app-plus": {
+			"bounce": "none" // 取消APP端iOS回弹,避免与下拉刷新冲突 (可统一配在 'globalStyle')
+		}
+	},
+	"tabBar": {
+		"list": [{
+				"pagePath": "pages/index/index"
+			},
+			{
+				"pagePath": "pages/mine/mine"
+			}
+		]
+	}
+}
